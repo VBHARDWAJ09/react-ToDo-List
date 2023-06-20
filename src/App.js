@@ -70,7 +70,7 @@ function App() {
           <ListItem index={index} itemData={toDoObject} deleteTask={deleteTask} markComplete={markComplete} editClicked={editClicked} key={index} />
         ) : <p className="no-item-text">📌No Task Added !</p>}
       </div>
-      <p className="footer-text"><a href="https://github.com/VBHARDWAJ09"> Vishal Bhardwaj</a></p>
+      <p className="footer-text"><a href="https://github.com/VBHARDWAJ09" target="_blank"> Vishal Bhardwaj</a></p>
     </div>
   );
 }
