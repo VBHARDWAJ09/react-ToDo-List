@@ -15,7 +15,6 @@ const ListItem = (props) => {
     <div className="list-item row jc-space-between">
       <span className={props.itemData.isComplete ? "task-complete" : ""} onClick={() => props.markComplete(props.index)}>{props.itemData.isComplete ? `✅ ` : ''}&nbsp;{props.itemData?.description}</span>
       <div className="manage-icons">
-        {/* <img className="delete-icon edit" src={edit} alt="" onClick={() => props.deleteTask(props.index)} /> */}
         <span onClick={() => props.editClicked(props.index)}><Edit /></span>
         <img className="delete-icon" src={trash} alt="" onClick={() => props.deleteTask(props.index)} />
       </div>
