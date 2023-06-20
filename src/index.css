@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+    monospace;
 }
 
 .app-background {
@@ -51,12 +51,16 @@ code {
 }
 
 .footer-text {
+  margin: 10px;
+  padding: 15px 25px;
+}
+
+.footer-text a {
   color: #131A28;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  margin: 10px;
-  padding: 15px 25px;
+  text-decoration: none;
 }
 
 .row {
@@ -72,7 +76,8 @@ code {
 .jc-space-between {
   justify-content: space-between;
 }
-.task-complete{
+
+.task-complete {
   text-decoration: line-through;
   color: white;
 }
@@ -121,6 +126,7 @@ code {
   height: 26px;
   cursor: pointer;
 }
+
 .no-item-text {
   color: #1CDBF5;
   font-size: 17px;
@@ -129,134 +135,141 @@ code {
   margin: 50px;
 }
 
+.manage-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
   .heading-text {
-      color: #1CDBF5;
-      font-size: 30px;
-      font-weight: bolder;
-      text-align: center;
-      margin: 50px;
-      background-color: #131A28;
-      padding: 15px 25px;
-      border-radius: 8px;
+    color: #1CDBF5;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+    background-color: #131A28;
+    padding: 15px 25px;
+    border-radius: 8px;
   }
 
   .text-input {
-      border: #1CDBF5 2px solid;
-      outline: none;
-      border-radius: 8px;
-      width: 200px;
-      font-size: 16px;
-      padding: 8px 12px;
-      margin: auto 8px;
-      font-weight: bold;
+    border: #1CDBF5 2px solid;
+    outline: none;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: auto 8px;
+    font-weight: bold;
   }
 
   .list-item {
-      background-color: #1CDBF5;
-      border: none;
-      border-radius: 8px;
-      width: 290px;
-      font-size: 18px;
-      padding: 10px 15px;
-      margin: 15px 0;
-      color: #131A28;
-      font-weight: bold;
-      text-align: start;
-      align-items: center;
+    background-color: #1CDBF5;
+    border: none;
+    border-radius: 8px;
+    width: 290px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    color: #131A28;
+    font-weight: bold;
+    text-align: start;
+    align-items: center;
   }
 
   .delete-icon {
-      height: 18px;
-      cursor: pointer;
+    height: 18px;
+    cursor: pointer;
   }
 }
 
 @media only screen and (max-width: 410px) {
   .heading-text {
-      color: #1CDBF5;
-      font-size: 24px;
-      font-weight: bolder;
-      text-align: center;
-      margin: 50px;
-      background-color: #131A28;
-      padding: 15px 25px;
-      border-radius: 8px;
+    color: #1CDBF5;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+    background-color: #131A28;
+    padding: 15px 25px;
+    border-radius: 8px;
   }
 
   .text-input {
-      border: #1CDBF5 2px solid;
-      outline: none;
-      border-radius: 8px;
-      width: 200px;
-      font-size: 16px;
-      padding: 8px 12px;
-      margin: auto 6px;
-      font-weight: bold;
+    border: #1CDBF5 2px solid;
+    outline: none;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: auto 6px;
+    font-weight: bold;
   }
 
   .list-item {
-      background-color: #1CDBF5;
-      border: none;
-      border-radius: 8px;
-      width: 270px;
-      font-size: 18px;
-      padding: 10px 15px;
-      margin: 15px 0;
-      color: #131A28;
-      font-weight: bold;
-      text-align: start;
-      align-items: center;
+    background-color: #1CDBF5;
+    border: none;
+    border-radius: 8px;
+    width: 270px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    color: #131A28;
+    font-weight: bold;
+    text-align: start;
+    align-items: center;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .heading-text {
-      color: #1CDBF5;
-      font-size: 20px;
-      font-weight: bolder;
-      text-align: center;
-      margin: 50px;
-      background-color: #131A28;
-      padding: 15px 20px;
-      border-radius: 8px;
+    color: #1CDBF5;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+    background-color: #131A28;
+    padding: 15px 20px;
+    border-radius: 8px;
   }
 
   .text-input {
-      border: #1CDBF5 2px solid;
-      outline: none;
-      border-radius: 8px;
-      width: 150px;
-      font-size: 14px;
-      padding: 8px 12px;
-      margin: auto 6px;
-      font-weight: bold;
+    border: #1CDBF5 2px solid;
+    outline: none;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: auto 6px;
+    font-weight: bold;
   }
 
   .list-item {
-      background-color: #1CDBF5;
-      border: none;
-      border-radius: 8px;
-      width: 220px;
-      font-size: 18px;
-      padding: 10px 15px;
-      margin: 15px 0;
-      color: #131A28;
-      font-weight: bold;
-      text-align: start;
-      align-items: center;
+    background-color: #1CDBF5;
+    border: none;
+    border-radius: 8px;
+    width: 220px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    color: #131A28;
+    font-weight: bold;
+    text-align: start;
+    align-items: center;
   }
 
   .add-button {
-      background-color: #1CDBF5;
-      outline: none;
-      border: none;
-      color: #131A28;
-      font-size: 17px;
-      font-weight: bolder;
-      padding: 10px 15px;
-      border-radius: 8px;
-      text-align: center;
-      margin: 15px;
-      cursor: pointer;
+    background-color: #1CDBF5;
+    outline: none;
+    border: none;
+    color: #131A28;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
   }
 }
